@@ -11,8 +11,16 @@ products.each do |product|
         fetch_type: 'browser',
         vars: {},
         headers: {
-            "User-Agent" => "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
-            "accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+            "User-Agent" => "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",
+            "Accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+            "Accept-Encoding" => "gzip, deflate, br",
+            "Accept-Language" => "en-US,en;q=0.5",
+            "Host" => "www.walmart.com",
+            "Sec-Fetch-Dest" => "document",
+            "Sec-Fetch-Mode" => "navigate",
+            "Sec-Fetch-Site" => "none",
+            "Sec-Fetch-User" => "?1",
+            "Upgrade-Insecure-Requests" => "1"
             }
     }
 end
@@ -29,8 +37,16 @@ if next_page_link[0]
         fetch_type: 'browser',
         vars: {},
         headers: {
-            "User-Agent" => "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36",
-            "accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+            "User-Agent" => "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",
+            "Accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+            "Accept-Encoding" => "gzip, deflate, br",
+            "Accept-Language" => "en-US,en;q=0.5",
+            "Host" => "www.walmart.com",
+            "Sec-Fetch-Dest" => "document",
+            "Sec-Fetch-Mode" => "navigate",
+            "Sec-Fetch-Site" => "none",
+            "Sec-Fetch-User" => "?1",
+            "Upgrade-Insecure-Requests" => "1"
         }
     }
 end
