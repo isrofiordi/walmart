@@ -14,8 +14,8 @@ pages << {
         # "Upgrade-Insecure-Requests" => "1"
     },
   display: {
-        "width": 800,
-        "height": 600
+        "width": 1366,
+        "height": 768
         },
   screenshot: {
           "take_screenshot": true,
