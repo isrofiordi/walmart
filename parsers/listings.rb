@@ -1,5 +1,6 @@
 # Parsing Product dan pagination
 nokogiri = Nokogiri.HTML(content)
+raise "Walmart Verification detected" unless nokogiri.css('div#sign-in-widget').size == 0
 
 products = nokogiri.css('a.absolute.w-100.h-100.z-1') # Container yang memuat link product
 products.each do |product|

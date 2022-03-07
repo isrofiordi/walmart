@@ -31,6 +31,9 @@ product['publisher'] = nokogiri.at_css('div[itemprop="brand"]').text unless noko
 product['walmart_number'] = 404
 product['walmart_number'] = nokogiri.at_css('link[rel="canonical"]')["href"].split('/').last.strip.to_i unless nokogiri.at_css('link[rel="canonical"]').nil?
 
+#early warning system, jika ketemu verifikasi walmart
+raise "Element failed to be extracted" if product['walmart_number'] == 404
+
 #extract product image
 product['img_url'] = "no_img_url"
 product['img_url'] = nokogiri.at_css('div.relative img.db')["src"] unless nokogiri.at_css('div.relative img.db').nil?
@@ -48,6 +51,7 @@ end
 
 # specify the collection where this record will be stored
 product['_collection'] = 'products'
+
 
 # save the product to the job’s outputs
 outputs << product
