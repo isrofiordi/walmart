@@ -17,14 +17,14 @@ pages << {
         "width": 1366,
         "height": 768
         },
-  screenshot: {
-          "take_screenshot": true,
-          "options": {
-            "fullPage": true,
-            "type": "jpeg",
-            "quality": 75
-            }
-          },
+  # screenshot: {
+  #         "take_screenshot": true,
+  #         "options": {
+  #           "fullPage": true,
+  #           "type": "jpeg",
+  #           "quality": 75
+  #           }
+  #         },
   url: "https://www.walmart.com/browse/movies-tv-shows/4096?facet=new_releases:Last+90+Days",
   fetch_type: "browser"
 }
