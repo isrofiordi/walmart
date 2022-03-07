@@ -21,6 +21,10 @@ products.each do |product|
             # "Sec-Fetch-Site" => "none",
             # "Sec-Fetch-User" => "?1",
             # "Upgrade-Insecure-Requests" => "1"
+        },
+        display: {
+        "width": 1366,
+        "height": 768
         }
     }
 end
@@ -47,6 +51,10 @@ if next_page_link[0]
             # "Sec-Fetch-Site" => "none",
             # "Sec-Fetch-User" => "?1",
             # "Upgrade-Insecure-Requests" => "1"
+        },
+        display: {
+        "width": 1366,
+        "height": 768
         }
     }
 end
