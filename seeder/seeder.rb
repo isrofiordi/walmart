@@ -24,7 +24,9 @@ pages << {
               isLandscape: false,
               isMobile: false
             });await page.click('div#px-captcha',{delay:10000});",
-          "disable_adblocker": true
+          "disable_adblocker": true,
+          "enable_images": true,
+          "stealth": true
   },
   # screenshot: {
   #         "take_screenshot": true,
