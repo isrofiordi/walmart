@@ -23,8 +23,8 @@ pages << {
               hasTouch: false,
               isLandscape: false,
               isMobile: false
-            });await page.click('div#px-captcha',{delay:5000});",
-          "disable_adblocker": true,
+            });await page.click('div#px-captcha',{delay:10000});",
+          "disable_adblocker": true
   },
   # screenshot: {
   #         "take_screenshot": true,
