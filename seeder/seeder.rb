@@ -23,19 +23,19 @@ pages << {
               hasTouch: false,
               isLandscape: false,
               isMobile: false
-            });await page.click('iframe[style='display: block; width: 100%; height: 100px; border: 0; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;']',{delay:10000});await sleep(200);await page.click('iframe[style='display: block; width: 100%; height: 100px; border: 0; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;']');",
+            });await page.click('iframe[style='display: block; width: 100%; height: 100px; border: 0; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;']',{button:'right'});",
           "disable_adblocker": true,
           "enable_images": true,
           "stealth": true
   },
-  # screenshot: {
-  #         "take_screenshot": true,
-  #         "options": {
-  #           "fullPage": true,
-  #           "type": "jpeg",
-  #           "quality": 75
-  #           }
-  #         },
+  screenshot: {
+          "take_screenshot": true,
+          "options": {
+            "fullPage": true,
+            "type": "jpeg",
+            "quality": 75
+            }
+          },
   url: "https://www.walmart.com/browse/movies-tv-shows/4096?facet=new_releases:Last+90+Days",
   fetch_type: "browser"
 }
