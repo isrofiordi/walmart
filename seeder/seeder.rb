@@ -23,17 +23,17 @@ pages << {
               hasTouch: false,
               isLandscape: false,
               isMobile: false
-            });",
-          "disable_adblocker": true
+            });await page.click('div#px-captcha',{delay:5000});",
+          "disable_adblocker": true,
   },
-  screenshot: {
-          "take_screenshot": true,
-          "options": {
-            "fullPage": true,
-            "type": "jpeg",
-            "quality": 75
-            }
-          },
+  # screenshot: {
+  #         "take_screenshot": true,
+  #         "options": {
+  #           "fullPage": true,
+  #           "type": "jpeg",
+  #           "quality": 75
+  #           }
+  #         },
   url: "https://www.walmart.com/browse/movies-tv-shows/4096?facet=new_releases:Last+90+Days",
   fetch_type: "browser"
 }
