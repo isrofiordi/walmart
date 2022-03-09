@@ -2,7 +2,7 @@ pages << {
   page_type: "listings",
   method: "GET",
   headers: {
-      "accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+      "Accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
       "sec-ch-ua" => '"Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"',
       "sec-ch-ua-mobile"=> "?0",
       "sec-ch-ua-platform"=> '"Linux"',
