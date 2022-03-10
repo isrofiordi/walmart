@@ -48,10 +48,14 @@ if category_node
     end
 end
 
+# information in product listing page
+product["listing_page"] = page['vars']['listing_page']
+
+# information in product rank in listing page
+product["item_rank"] = page['vars']['item_rank']
 
 # specify the collection where this record will be stored
 product['_collection'] = 'products'
-
 
 # save the product to the job’s outputs
 outputs << product

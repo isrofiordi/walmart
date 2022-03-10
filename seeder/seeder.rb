@@ -39,5 +39,6 @@ pages << {
   #           }
   #         },
   url: "https://www.walmart.com/browse/movies-tv-shows/4096?facet=new_releases:Last+90+Days",
-  fetch_type: "browser"
+  fetch_type: "browser",
+  vars: {"listing_page" => 1}
 }
