@@ -2,7 +2,7 @@
 nokogiri = Nokogiri.HTML(content)
 raise "Walmart Verification detected" unless nokogiri.css('div#sign-in-widget').size == 0
 listing_page = page['vars']['listing_page'] #buat mengetahui halaman listing
-item_rank = 0 # posisi item di halaman listing
+item_rank = 1 # posisi item di halaman listing
 
 products = nokogiri.css('a.absolute.w-100.h-100.z-1') # Container yang memuat link product
 raise "Item in page is not 40" if products.size != 40 #Akomodir kasus dimana ga ketangkap 40 produk dalam 1 page
