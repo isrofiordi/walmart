@@ -84,7 +84,8 @@ if next_page_link[0]
                 isLandscape: false,
                 isMobile: false
                 });",
-            "disable_adblocker": true
+            "disable_adblocker": false,
+            "stealth": true
         }
     }
 end
