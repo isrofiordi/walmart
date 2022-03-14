@@ -29,8 +29,7 @@ pages << {
               isLandscape: false,
               isMobile: false
             });
-            await page.click('div#px-captcha',{delay:12000});
-            await sleep(3000);",
+            ",
           "disable_adblocker": false,
           "enable_images": false,
           "stealth": true

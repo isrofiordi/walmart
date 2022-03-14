@@ -48,9 +48,7 @@ products.each do |product|
                 hasTouch: false,
                 isLandscape: false,
                 isMobile: false
-                });
-                await page.click('div#px-captcha',{delay:12000});
-                await sleep(3000);",
+                });",
             "disable_adblocker": true
         }
     }
@@ -94,8 +92,7 @@ if next_page_link[0]
                 isLandscape: false,
                 isMobile: false
                 });
-                await page.click('div#px-captcha',{delay:12000});
-                await sleep(3000);",
+            ",
             "disable_adblocker": false,
             "stealth": true
         }
