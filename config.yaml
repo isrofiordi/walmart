@@ -18,4 +18,34 @@ exporters:
     write_mode: pretty_array # can be `line`,`pretty`, `pretty_array`, or `array`
     offset: 0 # offset to where the exported record will start from
     order: desc # can be ascending `asc` or descending `desc`
-    start_on_job_done: true 
+    start_on_job_done: true
+
+  - exporter_name: products_csv
+    exporter_type: csv
+    collection: products
+    start_on_job_done: true
+    fields:
+      - header: "gid"
+        path: "_gid"
+      - header: "created_at"
+        path: "_created_at"
+      - header: "listing_page"
+        path: "listing_page"
+      - header: "item_rank"
+        path: "item_rank"
+      - header: "Title"
+        path: "Title"
+      - header: "current_price"
+        path: "current_price"
+      - header: "original_price"
+        path: "original_price"
+      - header: "rating"
+        path: "rating"
+      - header: "publisher"
+        path: "publisher"
+      - header: "walmart_number"
+        path: "walmart_number"
+      - header: "img_url"
+        path: "img_url"
+      - header: "categories"
+        path: "categories"
